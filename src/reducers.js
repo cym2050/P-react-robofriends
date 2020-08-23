@@ -9,7 +9,6 @@ import { act } from 'react-dom/test-utils';
 const intialStateSearch = {
 	searchField: ''
 }
-
 export const searchRobots = (state=intialStateSearch, action={}) => {
 	switch(action.type) {
 		case CHANGE_SEARCH_FIELD:
@@ -25,7 +24,6 @@ const initialStateRobots = {
 	error: '',
 	robots: []
 }
-
 export const requsetRobots = (state=initialStateRobots, action) => {
 	switch(action.type) {
 		case REQUEST_ROBOTS_PENDING:
